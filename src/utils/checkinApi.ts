@@ -17,7 +17,7 @@ export async function markTodayCheckin(userId: string) {
   const today = new Date().toISOString().slice(0, 10);
   const { data, error } = await supabase
     .from("checkins")
-    .upsert({ user_id: userId, date: today, completed: true }, { onConflict: ["user_id", "date"] })
+    .upsert({ user_id: userId, date: today, completed: true }, { onConflict: "user_id,date" })
     .select()
     .single();
   if (error) throw error;
