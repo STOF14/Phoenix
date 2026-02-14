@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { getTodayCheckin, markTodayCheckin, getCheckinStats } from "@/utils/checkinApi";
 import { supabase } from "@/utils/supabaseClient";

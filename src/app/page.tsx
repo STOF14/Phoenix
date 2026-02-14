@@ -2,6 +2,7 @@ import { LuxuryHeading } from "./components/LuxuryHeading";
 import { Auth } from "./components/Auth";
 import { UserMenu } from "./components/UserMenu";
 import { DailyChecklist } from "./components/DailyChecklist";
+"use client";
 import { TodaysPlan } from "./components/TodaysPlan";
 
 import { useEffect, useState } from "react";
