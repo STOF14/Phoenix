@@ -4,10 +4,12 @@ import "./globals.css";
 import "@fontsource/playfair-display/700.css";
 import "@fontsource/cormorant-garamond/700.css";
 
+export const metadata: Metadata = {
   title: "Phoenix Luxury Goal Tracker",
   description: "A luxury, cross-device goal and activity tracker for your 280 Days journey.",
 };
 
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
